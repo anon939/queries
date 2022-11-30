@@ -4,6 +4,9 @@
 -- In our experiments, we saw that 'unique' does not work in tuplex. 
 -- So for compatibility across all systems tested, we also 
 -- tested the query with simple count(xx) (as shown here)
+-- 
+-- Used in the experiments of figures 2, 5, and 7
+--
 
 SELECT SUM(bathrooms) AS sum_ba, 
        SUM(sqft) AS sum_sqft, 
