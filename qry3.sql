@@ -1,12 +1,14 @@
 -- Zillow query
 --
 -- Our original, full query includes count(distinct xx). 
--- In our experiments, we saw that 'unique' does not work in tuplex. 
+-- In our experiments, we saw that 'unique' does not work 
+-- in tuplex (at least at the time we ran the experiments). 
 -- So for compatibility across all systems tested, we also 
 -- tested the query with simple count(xx) (as shown here)
 -- 
 -- Used in the experiments of figures 2, 5, and 7
 --
+
 
 SELECT SUM(bathrooms) AS sum_ba, 
        SUM(sqft) AS sum_sqft, 
